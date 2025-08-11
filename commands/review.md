@@ -1,0 +1,1 @@
+Nutze den gemini-bridge-analyzer, paranoid-reviewer, technical-analyzer und den code-developer (Der code-developer soll dabei Zen Nutzen!)  PARALLEL um eine Review bzw Analyse eines Themas zu Starten. Sei stets im Ultrathink Mode! Der User erwartet Folgendes: $ARGUMENTS
