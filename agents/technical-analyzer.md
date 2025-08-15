@@ -129,6 +129,9 @@ Entry points:
 - cmd/, bin/, scripts/
 ```
 
+### Tool Usage
+Tool usage via the codex tool allows further analysis and insights from OpenAI Models. Therefore they should also always be tasked to assist in the analysis and act as an addition to the agents own analysis.
+
 ## Answer Structure:
 
 ### Executive Summary

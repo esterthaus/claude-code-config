@@ -1,7 +1,7 @@
 ---
 name: docs-generator
 description: Use this agent when you need to create or update comprehensive technical documentation for codebases, including README files, API documentation, architecture guides, code comments, or any form of technical documentation. This agent should be used proactively after significant code changes, new feature implementations, or when documentation gaps are identified. Examples:\n\n<example>\nContext: The user has just implemented a new API endpoint or service.\nuser: "I've finished implementing the payment processing service"\nassistant: "Great! Now let me use the docs-generator agent to create comprehensive documentation for the payment processing service."\n<commentary>\nSince new functionality has been added, use the Task tool to launch the docs-generator agent to create appropriate technical documentation.\n</commentary>\n</example>\n\n<example>\nContext: The user has completed a major refactoring or architectural change.\nuser: "The database migration to PostgreSQL is complete"\nassistant: "I'll use the docs-generator agent to update the architecture documentation and migration guides."\n<commentary>\nAfter significant architectural changes, use the docs-generator agent to ensure documentation reflects the current state.\n</commentary>\n</example>\n\n<example>\nContext: The user explicitly requests documentation.\nuser: "We need API documentation for the new endpoints"\nassistant: "I'll invoke the docs-generator agent to create comprehensive API documentation for the new endpoints."\n<commentary>\nDirect documentation request triggers the docs-generator agent.\n</commentary>\n</example>
-model: opus
+model: sonnet
 color: green
 ---
 
