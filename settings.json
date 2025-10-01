@@ -1,14 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "model": "opus",
-  "env":{
-    "MAX_THINKING_TOKENS": 31999
+  "env": {
+    "MAX_THINKING_TOKENS": "31999"
   },
   "statusLine": {
     "type": "command",
     "command": "npx -y @owloops/claude-powerline@latest --style=powerline",
     "padding": 0
   },
+  "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754283147057
   }

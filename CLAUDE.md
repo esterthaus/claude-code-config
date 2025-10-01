@@ -38,22 +38,14 @@
    - Hat 400k Token Context
    - WICHTIG: Nie Modell-Namen angeben!
    
-2. **Gemini Tool** (Kostenlos - für große Files)
-   - Primär für Files >400k Tokens die GPT-5 nicht schafft
-   - Als Bulk-Processor für sehr große Analysen
-   - WICHTIG: Nie Modell-Namen angeben!
-
-3. **Zen** (Nur als letzter Ausweg - kostet Tokens!)
-   - Nutze wenn andere Wege nicht funktionieren
-   - Bevorzuge Gemini 2.5 Pro oder Grok4
-   - NICHT für map.apps Projekte (proprietärer Code)
 
 ### Sub-Agenten
 - Nutze Sub-Agenten wann immer sinnvoll
 - Führe Sub-Agenten parallel aus wenn möglich
+- Nutze den Technical Analyzer Subagenten nach einer erfolgreichen Implementierung um die korrektheit der änderungen zu validieren!
 
 ## 🚀 Workflow
-1. **Bei Planbestätigung**: Ersten Schritt = vollständigen Plan als Markdown ausgeben
+1. **Bei Planbestätigung**: Ersten Schritt = vollständigen Plan als Markdown im projekt im docs Ordner ablegen. Existiert der noch nicht erstellst du ihn!
 2. **Projekt-Lernen**: Update diese Claude.md bei neuen projektrelevanten Erkenntnissen
 
 ## 💬 Kommunikation & Feedback
@@ -67,27 +59,16 @@
 3. **Problem-Isolation** - Isoliere Probleme systematisch und grenze Fehlerquellen ein
 
 ## 🔄 Git & Versionierung
-- **Commits nur auf expliziten Befehl** - Niemals selbstständig committen
+- **Commits nur auf expliziten Befehl** - Niemals selbstständig committen oder pushen!
 - **Diff-Tool selbstständig nutzen** - Verwende diff zur Überprüfung von Änderungen
 
-## 🤖 Agent-Strategie (falls konfiguriert)
+## 🤖 Agent-Strategie
 - **code-developer**: Standard für alle Code-Aufgaben
-- **paranoid-reviewer**: Nach kritischen Änderungen (Auth, Payments, Security)
+- **paranoid-reviewer**: Nach User Aufforderung!
 - **technical-analyzer**: Für Read-only Analyse ohne Änderungen
-- **codex-bridge-analyzer**: IMMER bei Reviews nutzen (kostenlos, alternative Perspektive!)
-- **gemini-bridge-analyzer**: Nur für Files >400k Tokens
 - **docs-generator**: Nach Feature-Completion oder API-Änderungen
 - **test-data-generator**: Für realistische Testdaten mit Edge-Cases
 
-### Review-Strategie
-- **Standard**: paranoid-reviewer + codex (2 Perspektiven)
-- **Full**: Alle relevanten Agents parallel (max. Perspektiven)
-- **Light**: Nur paranoid-reviewer (schnell & fokussiert)
 
 ## ⚠️ Spezielle Hinweise
-- **map.apps**: Zen ist hier nicht hilfreich (proprietärer Code unbekannt für Modelle)
-- **MCP Tools**: Nutze zusätzliche Tools wie Context7 oder Zen wenn sinnvoll
-- **Kosten-Optimierung**: 
-  - Codex (GPT-5) und Gemini sind kostenlos → liberal nutzen!
-  - Zen kostet Tokens → nur wenn wirklich nötig
-  - Bei Reviews IMMER Codex einbeziehen für alternative Perspektive
+- **MCP Tools**: Nutze zusätzliche Tools wie Context7 wenn sinnvoll
