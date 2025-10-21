@@ -29,7 +29,7 @@
 ### Dokumentation & Recherche (Priorität)
 1. **Context7** - IMMER zuerst für Library-Dokumentation nutzen
 2. **web_search** - Als Fallback wenn Context7 nicht ausreicht
-3. **Code Context Tool** - Für das Suchen neuer Elemente im Projekt
+3. **Code Context Tool** - Für das Suchen neuer Elemente im Projekt. Code Context ist dabei basierend auf einer Vektor Search / RAG. Und daher in machen situationen ggf Vorteilhaft oder Nachteilhaft! Nutze es wann immer sinnvoll!
 
 ### KI-Assistenten
 1. **Codex Tool (GPT-5)** (Kostenlos - IMMER nutzen für alternative Perspektive!)
