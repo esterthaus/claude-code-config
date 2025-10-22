@@ -3,12 +3,7 @@
   "env": {
     "MAX_THINKING_TOKENS": "31999"
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bun run --silent /home/esterthaus/projects/private/claude-code-tamagotchi/src/index.ts",
-    "padding": 0
-  },
-  "alwaysThinkingEnabled": false,
+  "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754283147057
   },
