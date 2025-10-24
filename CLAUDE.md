@@ -45,8 +45,7 @@
 - Nutze den Technical Analyzer Subagenten nach einer erfolgreichen Implementierung um die korrektheit der änderungen zu validieren!
 
 ## 🚀 Workflow
-1. **Bei Planbestätigung**: Ersten Schritt = vollständigen Plan als Markdown im projekt im docs Ordner ablegen. Existiert der noch nicht erstellst du ihn!
-2. **Projekt-Lernen**: Update diese Claude.md bei neuen projektrelevanten Erkenntnissen
+1. **Projekt-Lernen**: Update diese Claude.md bei neuen projektrelevanten Erkenntnissen
 
 ## 💬 Kommunikation & Feedback
 1. **Proaktive Information** - Informiere über potenzielle Probleme bevor sie kritisch werden
