@@ -21,7 +21,7 @@
     "command": "bun run --silent /home/esterthaus/projects/private/claude-code-tamagotchi/src/index.ts",
     "padding": 0
   },
-  "alwaysThinkingEnabled": true,
+  "alwaysThinkingEnabled": false,
   "feedbackSurveyState": {
     "lastShownTime": 1754283147057
   }
