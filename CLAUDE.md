@@ -29,17 +29,8 @@
 ### Dokumentation & Recherche (Priorität)
 1. **Context7** - IMMER zuerst für Library-Dokumentation nutzen
 2. **web_search** - Als Fallback wenn Context7 nicht ausreicht
-3. **Code Context Tool** - Für das Suchen neuer Elemente im Projekt. Code Context ist dabei basierend auf einer Vektor Search / RAG. Und daher in machen situationen ggf Vorteilhaft oder Nachteilhaft! Nutze es wann immer sinnvoll!
 
-### KI-Assistenten
-1. **Codex Tool (GPT-5)** (Kostenlos - IMMER nutzen für alternative Perspektive!)
-   - Bei JEDEM Review einbeziehen (kostet nichts, bringt oft neue Insights)
-   - Kann Files lesen und andere Blickwinkel bieten
-   - Hat 400k Token Context
-   - WICHTIG: Nie Modell-Namen angeben!
-   
-
-### Sub-Agenten
+##  Sub-Agenten
 - Nutze Sub-Agenten wann immer sinnvoll
 - Führe Sub-Agenten parallel aus wenn möglich
 - Nutze den Technical Analyzer Subagenten nach einer erfolgreichen Implementierung um die korrektheit der änderungen zu validieren!
@@ -69,5 +60,33 @@
 - **test-data-generator**: Für realistische Testdaten mit Edge-Cases
 
 
-## ⚠️ Spezielle Hinweise
-- **MCP Tools**: Nutze zusätzliche Tools wie Context7 wenn sinnvoll
+## ⚠ Spezielle Hinweise
+
+### MCP Tools
+- Nutze zusätzliche Tools wie Context7 wenn sinnvoll
+
+### IntelliJ Tools
+**Verfügbare Tools**: Ergänzende Tools bereitgestellt von der IntelliJ IDE
+
+**✅ Erlaubte Nutzung:**
+- Diagnostische Tools (Nutze diese IMMER wenn sinnvoll)
+- Search/Find Tools
+- Code-Analyse und Inspections
+- **Präferenz**: IntelliJ Analyse-Tools > Command Line Tools (z.B. für TypeScript checks)
+
+**❌ NICHT nutzen:**
+- Run Configuration starten
+- Run Configuration editieren
+- Jegliche Execution/Build Tools
+
+**🔧 WSL2 Pfad-Anforderung:**
+- **Kritisch**: `projectPath` Property muss IMMER WSL2-Notation verwenden
+- **Format**: `\\wsl.localhost\Ubuntu\home\esterthaus\projects\<projekt-name>`
+- Konvertiere Pfade vor Tool-Aufruf von `/home/...` → `\\wsl.localhost\Ubuntu\home\...`
+
+**Beispiel Tool-Aufruf:**
+```json
+{
+  "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\esterthaus\\projects\\my-project"
+}
+```

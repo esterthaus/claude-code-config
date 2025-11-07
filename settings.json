@@ -18,10 +18,10 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "bun run --silent /home/esterthaus/projects/private/claude-code-tamagotchi/src/index.ts",
+    "command": "npx -y ccstatusline@latest",
     "padding": 0
   },
-  "alwaysThinkingEnabled": false,
+  "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754283147057
   }
