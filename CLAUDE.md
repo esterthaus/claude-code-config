@@ -83,7 +83,7 @@
 - **Kritisch**: `projectPath` Property muss IMMER WSL2-Notation verwenden
 - **Format**: `\\wsl.localhost\Ubuntu\home\esterthaus\projects\<projekt-name>`
 - Konvertiere Pfade vor Tool-Aufruf von `/home/...` → `\\wsl.localhost\Ubuntu\home\...`
-
+- Wenn du gerade eine änderung gemacht hast. Warte immer 5 Sekunden bevor du einen neuen aufruf machst (Nutze Sleep). IntelliJ braucht einige Sekunden um die änderungen zu verarbeiten.
 **Beispiel Tool-Aufruf:**
 ```json
 {
